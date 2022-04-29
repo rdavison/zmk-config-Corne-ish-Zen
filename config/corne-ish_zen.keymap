@@ -28,5 +28,20 @@
                         >;
                 };
 
+                lowercase_layer {
+                        label = "MTGAP1";
+// -----------------------------------------------------------------------------------------
+// |      |  Y  |  P  |  O    |  U     |  J  |      |  K  |  D   |  L   |  C  |  W  |      |
+// |      |  I  |  N  |  E    |  A     |  :  |      |  M  |  H   |  T   |  S  |  R  |      |
+// |      |  Q  |  Z  |  "    |  ;     |  =  |      |  B  |  F   |  G   |  V  |  X  |      |
+//                    | LCTL  | LSHIFT | _1_ |      | _2_ | SPC  | BSPC |
+                        bindings = <
+&none      &kp LS(Y)  &kp LS(P)  &kp LS(O)  &kp LS(U)  &kp LS(J)  &kp LS(K)  &kp LS(D)  &kp LS(L)  &kp LS(C)  &kp LS(W)  &none
+&none      &kp LS(I)  &kp LS(N)  &kp LS(E)  &kp LS(A)  &kp COLON  &kp LS(M)  &kp LS(H)  &kp LS(T)  &kp LS(S)  &kp LS(R)  &none
+&none      &kp LS(Q)  &kp LS(Z)  &kp DQT    &kp EQUAL  &kp UNDER  &kp LS(B)  &kp LS(F)  &kp LS(G)  &kp LS(V)  &kp LS(X)  &none
+                      &kp LCTL   &mo 1      &mo 2                            &mo 3      &kp SPACE  &kp LA(BSPC)
+                        >;
+                };
+
         };
 };
