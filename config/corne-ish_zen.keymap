@@ -27,48 +27,6 @@
                       &kp LCTL   &mo 1      &mo 2                            &mo 3      &kp SPACE  &kp BSPC
                         >;
                 };
-                lowercase_layer {
-                        label = "MTGAP1";
-// -----------------------------------------------------------------------------------------
-// |      |  Y  |  P  |  O    |  U     |  J  |      |  K  |  D   |  L   |  C  |  W  |      |
-// |      |  I  |  N  |  E    |  A     |  :  |      |  M  |  H   |  T   |  S  |  R  |      |
-// |      |  Q  |  Z  |  "    |  ;     |  =  |      |  B  |  F   |  G   |  V  |  X  |      |
-//                    | LCTL  | LSHIFT | _1_ |      | _2_ | SPC  | BSPC |
-                        bindings = <
-&none      &kp LS(Y)  &kp LS(P)  &kp LS(O)  &kp LS(U)  &kp LS(J)  &kp LS(K)  &kp LS(D)  &kp LS(L)  &kp LS(C)  &kp LS(W)  &none
-&none      &kp LS(I)  &kp LS(N)  &kp LS(E)  &kp LS(A)  &kp COLON  &kp LS(M)  &kp LS(H)  &kp LS(T)  &kp LS(S)  &kp LS(R)  &none
-&none      &kp LS(Q)  &kp LS(Z)  &kp DQT    &kp EQUAL  &kp UNDER  &kp LS(B)  &kp LS(F)  &kp LS(G)  &kp LS(V)  &kp LS(X)  &none
-                      &kp LCTL   &mo 1      &mo 2                            &mo 3      &kp SPACE  &kp LA(BSPC)
-                        >;
-                };
-                nav_layer {
-                        label = "NAV";
-// -----------------------------------------------------------------------------------------
-// |      | ESC | SWIN| BT1 | BT2 |     |   |     | <=  |  UP | =>  | BKSP |      |
-// |      | TAB | SWAP| (^) | (v) | BCL |   |     | LFT | DWN | RGT | ENTR |      |
-// |      |  (  |   ) |     | LSH |  $  |   |  &  | PREV| PP  | NEXT| DEL  |      |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
-                        bindings = <
-&none      &kp ESC    &kp LG(TAB)   &bt BT_SEL 0      &bt BT_SEL 1 &none      &none      &kp LG(LS(LBRK)) &kp UP     &kp LG(LS(RBRK)) &kp iKSP   &none
-&none      &kp TAB    &kp LG(GRAVE) &kp C_BRI_DN      &kp C_BRI_UP &bt BT_CLR &none      &kp LEFT         &kp DOWN   &kp RIGHT        &kp ENTER  &none
-&none      &kp LPAR   &kp RPAR      &kp LG(LS(SPACE)) &kp LSHFT    &kp DLLR   &kp AMPS   &kp K_PREV       &kp K_PP   &kp K_NEXT       &kp DEL    &none
-                      &kp LCTL      &kp LALT          &kp LGUI                           &kp RGUI         &kp RALT   &kp RCTL
-                        >;
-                };
 
-                number_layer {
-                        label = "NUMSYM";
-// -----------------------------------------------------------------------------------------
-// |      |  ~  |  [  |  {  |  <  |  %  |   |  ^  |  >  |  }  |  ]  |  -  |      |
-// |      |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  |      |
-// |      |  !  |  ?  |  `  |  *  |  @  |   |  #  |  +  |  /  |  \  | "|" |      |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
-                        bindings = <
-&none     &kp TILDE &kp LBKT  &kp LBRC  &kp LT    &kp PRCNT &kp CARET &kp GT    &kp RBRC  &kp RBKT  &kp MINUS &none
-&none     &kp N1    &kp N2    &kp N3    &kp N4    &kp N5    &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &none
-&none     &kp EXCL  &kp QMARK &kp GRAVE &kp ASTRK &kp AT    &kp POUND &kp PLUS  &kp FSLH  &kp BSLH  &kp PIPE  &none
-                    &kp LCTL  &kp LALT  &kp LGUI                      &kp RGUI  &kp RALT  &kp RCTL
-                        >;
-                };
         };
 };
