@@ -43,5 +43,20 @@
                         >;
                 };
 
+                nav_layer {
+                        label = "NAV";
+// -----------------------------------------------------------------------------------------
+// |      | ESC | SWIN| BT1 | BT2 |     |   |     | <=  |  UP | =>  | BKSP |      |
+// |      | TAB | SWAP| (^) | (v) | BCL |   |     | LFT | DWN | RGT | ENTR |      |
+// |      |  (  |   ) |     | LSH |  $  |   |  &  | PREV| PP  | NEXT| DEL  |      |
+//                    | GUI |     | SPC |   | ENT |     | ALT |
+                        bindings = <
+&none      &kp ESC    &kp LG(TAB)   &bt BT_SEL 0      &bt BT_SEL 1 &none      &none      &kp LG(LS(LBRK)) &kp UP     &kp LG(LS(RBRK)) &kp iKSP   &none
+&none      &kp TAB    &kp LG(GRAVE) &kp C_BRI_DN      &kp C_BRI_UP &bt BT_CLR &none      &kp LEFT         &kp DOWN   &kp RIGHT        &kp ENTER  &none
+&none      &kp LPAR   &kp RPAR      &kp LG(LS(SPACE)) &kp LSHFT    &kp DLLR   &kp AMPS   &kp K_PREV       &kp K_PP   &kp K_NEXT       &kp DEL    &none
+                      &kp LCTL      &kp LALT          &kp LGUI                           &kp RGUI         &kp RALT   &kp RCTL
+                        >;
+                };
+
         };
 };
