@@ -58,19 +58,5 @@
                         >;
                 };
 
-                number_layer {
-                        label = "NUMSYM";
-// -----------------------------------------------------------------------------------------
-// |      |  ~  |  [  |  {  |  <  |  %  |   |  ^  |  >  |  }  |  ]  |  -  |      |
-// |      |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  |      |
-// |      |  !  |  ?  |  `  |  *  |  @  |   |  #  |  +  |  /  |  \  | "|" |      |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
-                        bindings = <
-&none     &kp TILDE &kp LBKT  &kp LBRC  &kp LT    &kp PRCNT &kp CARET &kp GT    &kp RBRC  &kp RBKT  &kp MINUS &none
-&none     &kp N1    &kp N2    &kp N3    &kp N4    &kp N5    &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &none
-&none     &kp EXCL  &kp QMARK &kp GRAVE &kp ASTRK &kp AT    &kp POUND &kp PLUS  &kp FSLH  &kp BSLH  &kp PIPE  &none
-                    &kp LCTL  &kp LALT  &kp LGUI                      &kp RGUI  &kp RALT  &kp RCTL
-                        >;
-                };
         };
 };
