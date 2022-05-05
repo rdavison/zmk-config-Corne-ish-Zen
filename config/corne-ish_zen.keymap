@@ -43,7 +43,6 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            label = "MTGAP";
             bindings = <
         //  ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
 &trans        &kp Y         &kp P         &kp O         &kp U         &kp J             &kp K         &kp D         &kp L         &kp C         &kp W         &trans
@@ -60,7 +59,7 @@
             bindings = <
         //  ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
 &trans        &kp C_BRI_DN  &kp C_PREV    &kp C_PP      &kp C_NEXT    &kp C_BRI_UP      &kp GRAVE     &kp ESC       &kp UARW      &kp TAB       &kp HOME      &trans
-&trans        &sk LGUI      &sk LALT      &sk LSHFT     &sk LCTRL     &trans            &kp C_VOL_UP  &kp LARW      &kp ENTER     &kp RARW      &kp END       &trans
+&trans        &sk LGUI      &sk LALT      &sk LSHFT     &sk LCTRL     &kp MINUS         &kp C_VOL_UP  &kp LARW      &kp ENTER     &kp RARW      &kp END       &trans
 &trans        &kp LG(Z)     &kp LG(X)     &kp LG(C)     &kp LG(V)     &none             &kp C_VOL_DN  &kp BSPC      &kp DARW      &kp DEL       &kp K_MUTE    &trans
         //  ╰─────────────┴─────────────╮                                                                                       ╭─────────────┴─────────────╯
                                           &trans        &trans        &trans            &trans        &trans        &trans
