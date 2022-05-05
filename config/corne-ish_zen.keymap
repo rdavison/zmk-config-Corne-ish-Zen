@@ -59,7 +59,7 @@
             label = "Nav";
             bindings = <
         //  ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-&trans        &kp C_BRI_DN  &kp C_PREV    &kp C_PP      &kp C_NEXT    &kp C_BRI_DN      &kp GRAVE     &ESC          &kp UARW      &kp TAB       &kp HOME      &trans
+&trans        &kp C_BRI_DN  &kp C_PREV    &kp C_PP      &kp C_NEXT    &kp C_BRI_UP      &kp GRAVE     &kp ESC       &kp UARW      &kp TAB       &kp HOME      &trans
 &trans        &sk LGUI      &sk LALT      &sk LSHFT     &sk LCTRL     &trans            &kp C_VOL_UP  &kp LARW      &kp ENTER     &kp RARW      &kp END       &trans
 &trans        &kp LG(Z)     &kp LG(X)     &kp LG(C)     &kp LG(V)     &none             &kp C_VOL_DN  &kp BSPC      &kp DARW      &kp DEL       &kp K_MUTE    &trans
         //  ╰─────────────┴─────────────╮                                                                                       ╭─────────────┴─────────────╯
@@ -87,7 +87,7 @@
         //  ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
 &trans        &kp TILDE     &kp LBKT      &kp LBRC      &kp LT        &kp PRCNT         &kp CARET     &kp GT        &kp RBRC      &kp RBKT      &kp PIPE      &trans
 &trans        &kp LPAR      &kp RPAR      &kp FSLH      &kp MINUS     &kp POUND         &kp BSLH      &kp DLLR      &kp AT        &kp PLUS      &kp EXCL      &trans
-&trans        &kp GRAVE     &kp QMARK     &kp ASTRK     &kp AMPS      &none             &trans        &kp PIPE      &kp LT        &kp GT        &trans        &trans
+&trans        &kp GRAVE     &kp QMARK     &kp ASTRK     &kp AMPS      &none             &trans        &trans        &trans        &trans        &trans        &trans
         //  ╰─────────────┴─────────────╮                                                                                       ╭─────────────┴─────────────╯
                                           &trans        &trans        &kp UNDER         &trans        &trans        &trans
         //                              ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
