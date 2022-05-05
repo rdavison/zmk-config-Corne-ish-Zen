@@ -43,11 +43,12 @@
         compatible = "zmk,keymap";
 
         default_layer {
+            label = "MTGAP";
             bindings = <
         //  ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-&trans        &kp Q         &kp W         &kp E         &kp R         &kp T             &kp Y         &kp U         &kp I         &kp O         &kp P         &trans
-&trans        &kp A         &kp S         &kp D         &kp F         &kp G             &kp H         &kp J         &kp K         &kp L         &kp SCLN      &trans
-&trans        &kp Z         &kp X         &kp C         &kp V         &kp B             &kp N         &kp M         &kp CMMA      &kp DOT       &kp FSLH      &trans
+&trans        &kp Y         &kp P         &kp O         &kp U         &kp J             &kp K         &kp D         &kp L         &kp C         &kp W         &trans
+&trans        &kp I         &kp N         &kp E         &kp A         &kp CMMA          &kp M         &kp H         &kp T         &kp S         &kp R         &trans
+&trans        &kp Q         &kp Z         &kp SQT       &kp DOT       &none             &kp B         &kp F         &kp G         &kp V         &kp X         &trans
         //  ╰─────────────┴─────────────╮                                                                                       ╭─────────────┴─────────────╯
                                           &trans        &mo_nav       &mo UPP_L         &kp SPACE     &mo SYM_L     &trans
         //                              ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
@@ -58,9 +59,9 @@
             label = "Nav";
             bindings = <
         //  ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-&trans        &kp F1        &kp F2        &kp F3        &kp F4        &kp F5            &kp PG_UP     &key_repeat   &kp UARW      &kp TAB       &kp HOME      &trans
-&trans        &sk LGUI      &sk LALT      &sk LSHFT     &sk LCTRL     &kp LC(Z)         &kp PG_DN     &kp LARW      &kp ENTER     &kp RARW      &kp END       &trans
-&trans        &trans        &kp LC(X)     &kp LC(C)     &kp LC(V)     &trans            &trans        &kp BSPC      &kp DARW      &kp DEL       &trans        &trans
+&trans        &kp C_BRI_DN  &kp C_PREV    &kp C_PP      &kp C_NEXT    &kp C_BRI_DN      &kp GRAVE     &ESC          &kp UARW      &kp TAB       &kp HOME      &trans
+&trans        &sk LGUI      &sk LALT      &sk LSHFT     &sk LCTRL     &trans            &kp C_VOL_UP  &kp LARW      &kp ENTER     &kp RARW      &kp END       &trans
+&trans        &kp LG(Z)     &kp LG(X)     &kp LG(C)     &kp LG(V)     &none             &kp C_VOL_DN  &kp BSPC      &kp DARW      &kp DEL       &kp K_MUTE    &trans
         //  ╰─────────────┴─────────────╮                                                                                       ╭─────────────┴─────────────╯
                                           &trans        &trans        &trans            &trans        &trans        &trans
         //                              ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
@@ -71,9 +72,9 @@
             label = "Upp";
             bindings = <
         //  ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-&trans        &kp LS(Q)     &kp LS(W)     &kp LS(E)     &kp LS(R)     &kp LS(T)         &kp LS(Y)     &kp LS(U)     &kp LS(I)     &kp LS(O)     &kp LS(P)     &trans
-&trans        &kp LS(A)     &kp LS(S)     &kp LS(D)     &kp LS(F)     &kp LS(G)         &kp LS(H)     &kp LS(J)     &kp LS(K)     &kp LS(L)     &kp SEMI      &trans
-&trans        &kp LS(Z)     &kp LS(X)     &kp LS(C)     &kp LS(V)     &kp LS(B)         &kp LS(N)     &kp LS(M)     &kp LT        &kp GT        &kp QMARK     &trans
+&trans        &kp LS(Y)     &kp LS(P)     &kp LS(O)     &kp LS(U)     &kp LS(J)         &kp LS(K)     &kp LS(D)     &kp LS(L)     &kp LS(C)     &kp LS(W)     &trans
+&trans        &kp LS(I)     &kp LS(N)     &kp LS(E)     &kp LS(A)     &kp COLON         &kp LS(M)     &kp LS(H)     &kp LS(T)     &kp LS(S)     &kp LS(R)     &trans
+&trans        &kp LS(Q)     &kp LS(Z)     &kp DQT       &kp SEMI      &none             &kp LS(B)     &kp LS(F)     &kp LS(G)     &kp LS(V)     &kp LS(X)     &trans
         //  ╰─────────────┴─────────────╮                                                                                       ╭─────────────┴─────────────╯
                                           &trans        &trans        &trans            &kp LS(SPACE) &trans        &trans
         //                              ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
@@ -84,11 +85,11 @@
             label = "Sym";
             bindings = <
         //  ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-&trans        &kp EXCL      &kp AT        &kp POUND     &kp DLLR      &kp PRCNT         &kp CARET     &kp AMPS      &kp SEMI      &kp COLON     &kp DQT       &trans
-&trans        &kp MINUS     &kp PLUS      &kp EQUAL     &kp ASTRK     &kp FSLH          &kp BSLH      &sk LCTRL     &sk LSHFT     &sk LALT      &sk LGUI      &trans
-&trans        &trans        &kp TILDE     &kp GRAVE     &kp QMARK     &trans            &trans        &kp PIPE      &kp LT        &kp GT        &trans        &trans
+&trans        &kp TILDE     &kp LBKT      &kp LBRC      &kp LT        &kp PRCNT         &kp CARET     &kp GT        &kp RBRC      &kp RBKT      &kp PIPE      &trans
+&trans        &kp LPAR      &kp RPAR      &kp FSLH      &kp MINUS     &kp POUND         &kp BSLH      &kp DLLR      &kp AT        &kp PLUS      &kp EXCL      &trans
+&trans        &kp GRAVE     &kp QMARK     &kp ASTRK     &kp AMPS      &none             &trans        &kp PIPE      &kp LT        &kp GT        &trans        &trans
         //  ╰─────────────┴─────────────╮                                                                                       ╭─────────────┴─────────────╯
-                                          &trans        &trans        &trans            &kp UNDER     &trans        &trans
+                                          &trans        &trans        &kp UNDER         &trans        &trans        &trans
         //                              ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
             >;
         };
@@ -97,9 +98,9 @@
             label = "Num";
             bindings = <
         //  ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-&trans        &none         &kp N7        &kp N8        &kp N9        &none             &kp F6        &kp F7        &kp F8        &kp F9        &kp F10       &trans
-&trans        &kp MINUS     &kp N4        &kp N5        &kp N6        &kp SLASH         &kp F11       &sk LCTRL     &sk LSHFT     &sk LALT      &sk LGUI      &trans
-&trans        &none         &kp N1        &kp N2        &kp N3        &none             &none         &kp F12       &kp COMMA     &kp DOT       &none         &trans
+&trans        &kp F1        &kp F2        &kp F3        &kp F4        &kp F5            &kp F6        &kp F7        &kp F8        &kp F9        &kp F10       &trans
+&trans        &kp N1        &kp N2        &kp N3        &kp N4        &kp N5            &kp N6        &kp N7        &kp N8        &kp N9        &kp N0        &trans
+&trans        &kp F11       &traps        &kp MINUS     &kp PLUS      &none             &kp DOT       &kp ASTRK     &kp FSLH      &trans        &kp F12       &trans
         //  ╰─────────────┴─────────────╮                                                                                       ╭─────────────┴─────────────╯
                                           &trans        &trans        &kp N0            &kp UNDER     &trans        &trans
         //                              ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
