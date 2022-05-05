@@ -50,7 +50,7 @@
 &trans        &kp I         &kp N         &kp E         &kp A         &kp CMMA          &kp M         &kp H         &kp T         &kp S         &kp R         &trans
 &trans        &kp Q         &kp Z         &kp SQT       &kp DOT       &none             &kp B         &kp F         &kp G         &kp V         &kp X         &trans
         //  ╰─────────────┴─────────────╮                                                                                       ╭─────────────┴─────────────╯
-                                          &trans        &mo_nav       &mo UPP_L         &kp SPACE     &mo SYM_L     &trans
+                                          &trans        &mo nav       &mo UPP_L         &kp SPACE     &mo SYM_L     &trans
         //                              ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
             >;
         };
