@@ -86,7 +86,7 @@
         //  ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
 &trans        &kp TILDE     &kp LBKT      &kp LBRC      &kp LT        &kp PRCNT         &kp CARET     &kp GT        &kp RBRC      &kp RBKT      &kp PIPE      &trans
 &trans        &kp GRAVE     &kp QMARK     &kp ASTRK     &kp MINUS     &kp POUND         &kp BSLH      &kp DLLR      &kp AT        &kp PLUS      &kp EXCL      &trans
-&trans        &kp LPAR      &kp RPAR      &kp FLSH      &kp AMPS      &none             &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR    &trans
+&trans        &kp LPAR      &kp RPAR      &kp FSLH      &kp AMPS      &none             &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR    &trans
         //  ╰─────────────┴─────────────╮                                                                                       ╭─────────────┴─────────────╯
                                           &trans        &trans        &kp UNDER         &trans        &trans        &trans
         //                              ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
